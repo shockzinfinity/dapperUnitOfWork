@@ -2,6 +2,7 @@
 
 namespace dapper.unitofwork
 {
+  // Adapted from https://github.com/aspnet/EntityFrameworkCore/blob/master/src/EFCore.SqlServer/Storage/Internal/SqlServerTransientExceptionDetector.cs
   public class SqlTransientExceptionDetector : IExceptionDetector
   {
     private static readonly int[] HandleErrorNumbers =
